@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+body {
+  background-image: url("/assets/img/firstBg.png"), url("assets/img/repeat.png");
+  background-size: cover, cover;
+  background-position: top, center;
+  background-repeat: no-repeat, repeat;
+
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+.custom-button a {
+  border: 2px solid #D43B72;
+  border-radius: 100px;
+  background: transparent;
+  padding: 10px 20px;
+  color: #fff; /* Set the text color to white */
+  transition: background 0.3s, color 0.3s;
+}
+
+.custom-button a:hover {
+  background: #D43B72;
+  color: white;
+}
+
+
+.title {
+  color: #FFF;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) { 
+  .title {
+    font-size: 25px; 
+  }
+}
+
+@media (min-width: 800px) { 
+    .title {
+    font-size: 30px; 
+  }
+}
