@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 
 body {
-  background-image: url("/assets/img/firstBg.png"), url("assets/img/repeat.png");
+  background-image: url("assets/img/firstBg.png"), url("assets/img/repeat.png");
   background-size: contain, contain;
   background-position: top, center;
   background-repeat: no-repeat, repeat;
@@ -107,6 +107,10 @@ body {
   font-weight: 400;
 }
 
+.stat span {
+  opacity: 0.75; 
+  margin-right: 10px;
+}
 .price-table {
   width: 100%;
 }
@@ -137,7 +141,13 @@ td {
 .service {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 }
+
+.service svg {
+  margin-top: 5px;
+}
+
 
 .service-text {
   color: #fff;
@@ -252,6 +262,11 @@ td {
   padding: 30px;
 }
 
+.modal-content.carousel {
+  background-color: transparent;
+  border: none;
+}
+
 .btn-close {
   position: absolute;
   top: 10px;
@@ -335,6 +350,10 @@ box-shadow: 0px 4px 0px 0px #127223, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) 
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+.breadcrumb-item svg {
+  margin-top: 7px;
+  margin-right: 5px
 }
 
 .breadcrumb-item-text {
@@ -534,3 +553,8 @@ a:hover {
   border: none;
 }
 
+.badge-img {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
