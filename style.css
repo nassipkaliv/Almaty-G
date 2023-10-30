@@ -558,3 +558,8 @@ a:hover {
   top: -5px;
   right: -5px;
 }
+
+.badge-img img {
+  width: 75px;
+  height: 75px;
+}
