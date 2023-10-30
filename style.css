@@ -35,6 +35,7 @@ body {
   color: #FFF;
   font-weight: 900;
   text-transform: uppercase;
+  font-size: 40px;
 }
 
 @media (max-width: 768px) { 
@@ -196,6 +197,11 @@ td {
   margin: 0 auto;
 }
 
+.more-girls-button:hover {
+  box-shadow: 0px 4px 0px 0px #972850, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.25) inset, 0px 10px 40px 0px #D43B72;
+  color: #FFF;
+}
+
 .description {
   margin-top: 100px;
 }
@@ -238,4 +244,287 @@ td {
   color: #FFF;
   font-size: 14px;
   text-align: center;
+}
+
+.modal-content {
+  background-color: #12151C;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+}
+
+.modal-title {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 auto; 
+}
+
+.modal-custom-button {
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid #D43B72;
+  background: none;
+  height: 54px;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.button-text {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.modal-custom-button:hover {
+  background: #D43B72;
+  color: white;
+}
+
+.social-media-btn-telegram {
+  border-radius: 100px;
+  background: #29A1D4;
+  box-shadow: 0px 4px 0px 0px #1B7CA5, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.25) inset, 0px 10px 40px 0px rgba(41, 161, 212, 0.40);
+  display: flex;
+  height: 54px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 48%;
+}
+
+.social-media-btn-whatsapp {
+  border-radius: 100px;
+background: #3BC153;
+box-shadow: 0px 4px 0px 0px #127223, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.25) inset, 0px 10px 40px 0px rgba(44, 212, 74, 0.40);
+  display: flex;
+  height: 54px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 48%;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.breadcrumb-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.breadcrumb-item-text {
+ color: #FFF;
+ font-size: 15px; 
+}
+
+.review-faq-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.review-button {
+  border-radius: 100px;
+  border: 1px solid #D43B72;
+  background: none;
+  height: 54px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+}
+
+.review-button.active  {
+  background-color: #D43B72; /* Change the background color to the desired active color */
+}
+
+.review-button.active svg path {
+  fill: white;
+}
+
+.review-button:hover {
+  background: #D43B72;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.review-button-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+}
+
+.question-button-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.question-button {
+  border-radius: 100px;
+  border: 1px solid #D43B72;
+  background: none;
+  height: 54px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+}
+
+
+.question-button.active  {
+  background-color: #D43B72; /* Change the background color to the desired active color */
+}
+
+.question-button.active svg path {
+  fill: white;
+}
+.question-button:hover {
+  background: #D43B72;
+}
+
+.review-button:hover svg path,
+.question-button:hover svg path {
+  fill: #FFF; 
+}
+
+.user-review {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.review-description {
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.comment {
+  color: var(--Style, #D43B72);
+  font-family: Sofia Sans;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: end;
+}
+
+.separator {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.review-comment-feedback {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  width: 70%;
+  padding: 20px;
+  float: right;
+}
+
+.feedback-text {
+  color: #FFF;
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+.lead-review-container {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lead-review-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 900;
+  color: #FFF;
+}
+
+.lead-review-text {
+  font-size: 15px;
+  text-align: center;
+  color: #FFF;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.big-text-input-container {
+  width: 100%;
+  margin-top: 20;
+  margin-bottom: 20px;
+}
+
+.big-text-input {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  color: #FFF;
+}
+
+.big-text-input::placeholder {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 16px;
+}
+
+.question-text {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.question-feedback-container {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #FFF;
+  padding: 20px;
 }
