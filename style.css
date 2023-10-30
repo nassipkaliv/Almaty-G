@@ -563,3 +563,9 @@ a:hover {
   width: 75px;
   height: 75px;
 }
+
+@media (max-width: 992px) {
+  .right-container {
+      display: none;
+  }
+}
