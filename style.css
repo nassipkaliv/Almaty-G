@@ -528,3 +528,9 @@ a:hover {
   color: #FFF;
   padding: 20px;
 }
+
+.img-thumbnail {
+  background-color: transparent;
+  border: none;
+}
+
