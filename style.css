@@ -10,8 +10,17 @@ body {
 }
 
 
+
+a:hover {
+  cursor: pointer;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 .custom-button a {
@@ -23,11 +32,16 @@ body {
   justify-content: center;
   text-transform: uppercase;
   transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 900;
+  height: 54px;
 }
 
 .custom-button a:hover {
   background: #D43B72;
   color: white;
+  cursor: pointer;
 }
 
 
@@ -35,18 +49,14 @@ body {
   color: #FFF;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 40px;
-}
+  font-size: 40px; /* Default font size for larger screens */
 
-@media (max-width: 768px) { 
-  .title {
-    font-size: 25px; 
+  @media (max-width: 768px) { /* Adjust for tablets */
+    font-size: 30px;
   }
-}
 
-@media (min-width: 800px) { 
-    .title {
-    font-size: 30px; 
+  @media (max-width: 480px) { /* Adjust for mobile devices */
+    font-size: 25px;
   }
 }
 
@@ -89,6 +99,10 @@ body {
 .img-picker {
   display: flex;
   flex-direction: column;
+}
+
+.img-picker img {
+  cursor: pointer;
 }
 
 .img-counter {
@@ -157,6 +171,7 @@ td {
 .service-more {
   color: var(--Style, #D43B72);
   font-size: 15px;
+  cursor: pointer;
 }
 
 .evaluate-container {
@@ -168,6 +183,11 @@ td {
   color: #FFF;
   font-size: 15px;
   margin-right: 15px;
+  text-decoration: none;
+}
+
+.reviews:hover {
+  color: var(--Style, #D43B72);
 }
 
 .addition-info {
@@ -570,3 +590,6 @@ a:hover {
   }
 }
 
+.carousel svg {
+  cursor: pointer;
+}
