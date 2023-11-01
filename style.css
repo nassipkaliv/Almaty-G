@@ -381,6 +381,12 @@ box-shadow: 0px 4px 0px 0px #127223, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) 
  font-size: 15px; 
 }
 
+.breadcrumb-item-text-last {
+  color: #FFF;
+  font-size: 15px; 
+  opacity: 0.5;
+ }
+
 .review-faq-btn-container {
   display: flex;
   flex-direction: row;
@@ -590,6 +596,70 @@ a:hover {
   }
 }
 
+@media (max-width: 992px) {
+  #thumbSlider {
+      display: none;
+  }
+}
+
 .carousel svg {
   cursor: pointer;
 }
+
+#newCarousel img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+#thumbSlider .carousel-inner {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#thumbSlider .row {
+  overflow: hidden;
+}
+
+#thumbSlider .thumb:hover {
+  cursor: pointer;
+}
+
+#thumbSlider .thumb.active img {
+  opacity: 1;
+}
+
+#thumbSlider img {
+  height: 135px;
+  width: 90px;
+  display: flex;
+  opacity: 0.5;
+}
+
+#thumbSlider img:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev .custom-svg {
+  transition: stroke 0.3s; 
+}
+
+.carousel-control-prev:hover .custom-svg {
+  stroke: white;
+  fill: white; 
+}
+
+.carousel-control-next {
+  padding-left: 10px
+}
+
+.carousel-control-next .custom-svg {
+  transition: stroke 0.3s; 
+}
+
+.carousel-control-next:hover .custom-svg {
+  stroke: white;
+  fill: white; 
+}
+
