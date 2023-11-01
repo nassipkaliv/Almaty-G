@@ -5,7 +5,7 @@ body {
   background-size: contain, contain;
   background-position: top, center;
   background-repeat: no-repeat, repeat;
-
+  background-color: #12151C;
   font-family: 'Sofia Sans', sans-serif;
 }
 
@@ -21,6 +21,10 @@ a:hover {
 
 .navbar-toggler {
   border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .custom-button a {
@@ -154,18 +158,24 @@ td {
 
 .service {
   display: flex;
-  flex-direction: row;
+  align-items: center; 
   gap: 10px;
 }
 
 .service svg {
-  margin-top: 5px;
+  width: 18px; 
+  height: 18px; 
 }
 
+.service .big-text-svg {
+  width: 32px; 
+  height: 18px; 
+}
 
 .service-text {
   color: #fff;
   font-size: 15px;
+  flex-grow: 1; 
 }
 
 .service-more {
