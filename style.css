@@ -19,6 +19,25 @@ a:hover {
   color: #ffffff;
 }
 
+.navbar-nav {
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand {
+  transition: color 0.3s;
+}
+
+.nav-item {
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -53,22 +72,61 @@ a:hover {
   color: #FFF;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 40px; /* Default font size for larger screens */
+  font-size: 40px; 
+  margin-left: 10px;
 
-  @media (max-width: 768px) { /* Adjust for tablets */
+  @media (max-width: 768px) { 
     font-size: 30px;
+    font-weight: 900;
   }
 
-  @media (max-width: 480px) { /* Adjust for mobile devices */
+  @media (max-width: 480px) { 
     font-size: 25px;
+    font-weight: 900;
   }
 }
 
 
+.card-container {
+  margin-top: 100px;
+
+  @media (max-width: 768px) { 
+    margin-top: 40px
+  }
+
+  @media (max-width: 480px) { 
+    margin-top: 20px;
+  }
+}
+
+
+
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 708px;
+    margin: 1.75rem auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+      max-width: 380px;
+      margin: 1.75rem auto;
+    }
+  }
+
+
+.card-header {
+  padding: 0.5rem 0rem;
+}
+
+.card-body {
+  padding: 1rem 0rem;
+}
 .card {
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.05);
-  padding: 30px 30px;
+  padding: 20px;
 }
 
 .card-title {
@@ -80,15 +138,15 @@ a:hover {
 .card-subtitle {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  align-self: stretch;
   align-items: center;
+  width: 100%;
 }
 
 .mobile-num {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
+  margin-left: 10px;
 }
 
 .link-girl {
@@ -98,6 +156,8 @@ a:hover {
   font-weight: 900;
   text-decoration-line: underline;
   text-transform: uppercase;
+  margin-left: 20px;
+  transition: color 0.3s;
 }
 
 .img-picker {
@@ -184,6 +244,11 @@ td {
   cursor: pointer;
 }
 
+.service-more:hover {
+  color: #fff;
+  transition: 0.3s color;
+}
+
 .evaluate-container {
   display: flex;
   flex-direction: row;
@@ -194,6 +259,7 @@ td {
   font-size: 15px;
   margin-right: 15px;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .reviews:hover {
@@ -218,6 +284,7 @@ td {
   font-weight: 900;
   text-decoration-line: underline;
   text-transform: uppercase;
+  transition: color 0.3s;
 }
 
 .more-girls-button {
@@ -277,6 +344,7 @@ td {
   color: var(--Style, #D43B72);
   font-size: 16px;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer-description {
@@ -299,8 +367,8 @@ td {
 
 .btn-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   background: none;
   border: none;
 }
@@ -376,6 +444,25 @@ box-shadow: 0px 4px 0px 0px #127223, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) 
   flex-direction: row;
 }
 
+.breadcrumb-container {
+  margin-top: 50px;
+  margin-bottom: 25px;
+
+  @media (max-width: 768px) { 
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 480px) { 
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+
 .breadcrumb-item {
   display: flex;
   flex-direction: row;
@@ -439,12 +526,14 @@ a:hover {
   font-weight: 900;
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .question-button-text {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 900;
+  transition: color 0.3s;
 }
 
 .question-button {
@@ -487,6 +576,14 @@ a:hover {
   line-height: 22px;
 }
 
+.user span {
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.time span {
+  color: rgba(255, 255, 255, 0.50);
+}
+
 .review-description {
   color: #FFFFFF;
   font-size: 15px;
@@ -502,6 +599,7 @@ a:hover {
   text-transform: uppercase;
   display: flex;
   justify-content: end;
+  transition: color 0.3s;
 }
 
 .separator {
@@ -616,48 +714,73 @@ a:hover {
   cursor: pointer;
 }
 
-#newCarousel img {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
+#myCarousel {
+  img {
+    height: 50%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
-#thumbSlider .carousel-inner {
-  padding-left: 3rem;
-  padding-right: 3rem;
+#thumbSlider {
+  .carousel-inner {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+    .row {
+      overflow: hidden;
+    }
+    
+    .thumb {
+      &:hover {
+        cursor: pointer;
+      }
+      &.active img {
+        opacity: 1;
+      }
+    }
+    
+    img {
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      opacity: .5;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 }
 
-#thumbSlider .row {
-  overflow: hidden;
+
+.carousel-control-prev.custom {
+  margin-left: -100px;
+  transition: color 0.3s;
 }
 
-#thumbSlider .thumb:hover {
-  cursor: pointer;
+.carousel-control-next.custom {
+  margin-right: -100px;
+  transition: color 0.3s;
 }
 
-#thumbSlider .thumb.active img {
-  opacity: 1;
-}
-
-#thumbSlider img {
-  height: 135px;
-  width: 90px;
-  display: flex;
-  opacity: 0.5;
-}
-
-#thumbSlider img:hover {
-  opacity: 1;
+.carousel-indicators.custom {
+  margin-bottom: -60px;
+  transition: color 0.3s;
 }
 
 .carousel-control-prev .custom-svg {
   transition: stroke 0.3s; 
+  transition: color 0.3s;
 }
 
 .carousel-control-prev:hover .custom-svg {
   stroke: white;
   fill: white; 
+  transition: color 0.3s;
 }
 
 .carousel-control-next {
@@ -666,6 +789,7 @@ a:hover {
 
 .carousel-control-next .custom-svg {
   transition: stroke 0.3s; 
+  transition: color 0.3s;
 }
 
 .carousel-control-next:hover .custom-svg {
@@ -673,3 +797,19 @@ a:hover {
   fill: white; 
 }
 
+
+.card-footer {
+  padding-top: 0;
+}
+
+#carouselExample {
+  .img-thumbnail {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.img-thumbnail.active,
+.img-thumbnail:hover {
+    opacity: 1;
+}
+}
