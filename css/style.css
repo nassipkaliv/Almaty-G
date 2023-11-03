@@ -3,7 +3,7 @@
 
 
 body {
-  background-image: url("/assets/img/firstBg.png"), url("/assets/img/repeat.png");
+  background-image: url('https://i.postimg.cc/MHbxjdJg/firstBg.png'), url('https://i.postimg.cc/SN3VMqDF/repeat.png');
   background-size: contain, contain;
   background-position: top, center;
   background-repeat: no-repeat, repeat;
@@ -28,7 +28,7 @@ a:hover {
     padding-left: 40px;
 }
 
-.navbar-nav {
+.navbar-nav.ms-auto {
   align-items: center;
   justify-content: center;
   gap: 60px;
@@ -40,6 +40,10 @@ a:hover {
 
 .nav-item {
   justify-content: center;
+}
+
+.nav-item.custom-button {
+  margin-right: 0px;
 }
 
 
