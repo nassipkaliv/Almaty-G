@@ -21,17 +21,17 @@ a:hover {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
+  gap: 60px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 40px;
-    padding-left: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
-.navbar-nav.ms-auto {
+.navbar-nav {
   align-items: center;
   justify-content: center;
-  gap: 60px;
 }
 
 .navbar-brand {
