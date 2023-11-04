@@ -89,6 +89,49 @@ a:hover {
   cursor: pointer;
 }
 
+#menuModal {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+#menuModal .modal-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#menuModal .modal-content {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#menuModal ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menuModal .nav-item {
+  margin-bottom: 48px; 
+}
+
+#menuModal .nav-link {
+  color: #FFF;
+
+font-family: Sofia Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#menuModal .modal-dialog-centered {
+  width: 100%;
+  max-width: 100%;
+  min-height: calc(100% - 0rem)
+}
 
 .title {
   color: #FFF;
@@ -150,6 +193,7 @@ a:hover {
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.05);
   padding: 20px;
+  word-wrap: normal;
 }
 
 .card-title {
@@ -191,6 +235,7 @@ a:hover {
 
 .img-picker img {
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .img-counter {
@@ -378,6 +423,11 @@ td {
   color: #FFF;
   font-size: 14px;
   text-align: center;
+}
+
+.modal {
+  background: rgba(23, 30, 46, 0.75);
+  backdrop-filter: blur(10px);
 }
 
 .modal-content {
@@ -750,6 +800,8 @@ a:hover {
   cursor: pointer;
 }
 
+
+
 #myCarousel {
   img {
     height: 50%;
@@ -792,6 +844,14 @@ a:hover {
   }
 }
 
+
+#imageCarousel img {
+  border-radius: 20px;
+}
+
+#carouselExample img {
+  border-radius: 20px;
+}
 
 .carousel-control-prev.custom {
   margin-left: -100px;
@@ -847,7 +907,9 @@ a:hover {
 }
 
 .img-thumbnail.active,
-.img-thumbnail:hover {
+.img-thumbnail:hover
+ {
     opacity: 1;
 }
 }
+
