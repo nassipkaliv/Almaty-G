@@ -364,6 +364,7 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .footer-item {
@@ -592,6 +593,7 @@ a:hover {
 }
 .question-button:hover {
   background: #D43B72;
+  transition: background 0.3s, color 0.3s;
 }
 
 .review-button:hover svg path,
@@ -707,6 +709,7 @@ a:hover {
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .question-feedback-container {
