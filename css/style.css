@@ -248,14 +248,13 @@ td {
   gap: 10px;
 }
 
-.service svg {
-  width: 18px; 
-  height: 18px; 
-}
-
-.service .big-text-svg {
-  width: 32px; 
-  height: 18px; 
+.service-svg-container {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 7px 4px 6.686px 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-text {
