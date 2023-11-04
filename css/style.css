@@ -101,6 +101,7 @@ a:hover {
   justify-content: end;
   align-items: center;
   margin-bottom: 0;
+  
 }
 
 #menuModal .modal-content {
@@ -119,12 +120,11 @@ a:hover {
 
 #menuModal .nav-link {
   color: #FFF;
-
-font-family: Sofia Sans;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: Sofia Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #menuModal .modal-dialog-centered {
@@ -179,6 +179,7 @@ line-height: normal;
       margin: 1.75rem auto;
     }
   }
+
 
 
 .card-header {
@@ -471,6 +472,7 @@ td {
   flex-direction: row;
 }
 
+
 .button-text {
   color: #FFF;
   font-family: Sofia Sans;
@@ -526,6 +528,55 @@ box-shadow: 0px 4px 0px 0px #127223, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) 
   align-items: center;
   flex-direction: row;
 }
+
+
+@media (max-width: 768px) {
+  #exampleModal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    width: 100%;
+    margin: 0;
+    transform: translateY(0);
+  }
+
+  #exampleModal .modal-dialog {
+    width: 100%;
+    max-width: 100%;
+    min-height: calc(100% - 0rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  #exampleModal .modal-content {
+    margin-bottom: 30px;
+  }
+
+  #exampleModal .modal-title {
+    font-size: 25px;
+  }
+
+  #exampleModal .modal-custom-button {
+    margin-bottom: 24px;
+  }
+
+  #exampleModal .row {
+    gap: 10px;
+  }
+
+  .button-text {
+    font-size: 12px;
+  }
+
+  #exampleModal .modal-footer {
+    padding-bottom: 30px;
+  }
+}
+
 
 .breadcrumb-container {
   margin-top: 50px;
