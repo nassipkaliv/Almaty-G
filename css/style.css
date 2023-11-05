@@ -595,7 +595,7 @@ box-shadow: 0px 4px 0px 0px #127223, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) 
 
 .breadcrumb {
   margin-bottom: 0;
-  flex-wrap: nowrap;
+  flex-wrap: initial;
 }
 
 .breadcrumb-item {
@@ -636,6 +636,10 @@ box-shadow: 0px 4px 0px 0px #127223, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) 
   align-items: center;
   gap: 10px;
   color: #FFF;
+
+  @media (max-width: 768px) { 
+    width: 155px;
+  }
 }
 
 .review-button.active  {
@@ -682,6 +686,11 @@ a:hover {
   align-items: center;
   gap: 10px;
   color: #FFF;
+
+  @media (max-width: 768px) { 
+    width: 155px;
+  }
+  
 }
 
 
