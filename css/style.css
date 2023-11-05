@@ -11,6 +11,11 @@ body {
   font-family: 'Sofia Sans', sans-serif;
 }
 
+.service-sprite {
+  display: none;
+}
+
+
 a:hover {
   cursor: pointer;
 }
@@ -292,6 +297,11 @@ td {
   display: flex;
   align-items: center; 
   gap: 10px;
+}
+
+.service-tick {
+  height: 13px;
+  width: 18px;
 }
 
 .service-svg-container {
@@ -690,7 +700,7 @@ a:hover {
   @media (max-width: 768px) { 
     width: 155px;
   }
-  
+
 }
 
 
