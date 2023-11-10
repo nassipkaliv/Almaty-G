@@ -484,6 +484,7 @@ td {
   right: 20px;
   background: none;
   border: none;
+  z-index: 1;
 }
 
 .modal-title {
@@ -944,8 +945,19 @@ a:hover {
 
 #imageCarousel img {
   border-radius: 20px;
-  width: 667px;
-  height: 1000px;
+}
+
+#imageCarousel .btn-close {
+  right: 145px;
+  z-index: 1;
+
+  @media (max-width: 720px) { 
+    right: 140px;
+  }
+
+  @media (max-width: 576px) { 
+    right: 20px;
+  }
 }
 
 #carouselExample img {
@@ -953,12 +965,12 @@ a:hover {
 }
 
 .carousel-control-prev.custom {
-  margin-left: -100px;
+  
   transition: color 0.3s;
 }
 
 .carousel-control-next.custom {
-  margin-right: -100px;
+  
   transition: color 0.3s;
 }
 
