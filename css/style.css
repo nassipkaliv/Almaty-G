@@ -163,7 +163,7 @@ a:hover {
 
 
 .card-container {
-  margin-top: 100px;
+  margin-top: 95px;
 
   @media (max-width: 768px) { 
     margin-top: 40px
@@ -203,7 +203,7 @@ a:hover {
 .card {
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
+  padding: 30px;
   word-wrap: normal;
 }
 
@@ -226,6 +226,7 @@ a:hover {
   font-size: 20px;
   font-weight: 400;
   margin-left: 10px;
+  text-decoration: none;
 }
 
 .link-girl {
@@ -239,14 +240,33 @@ a:hover {
   transition: color 0.3s;
 }
 
+.call-button {
+  display: flex;
+  flex-direction: row;
+}
+
 .img-picker {
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 
 .img-picker img {
   cursor: pointer;
   border-radius: 20px;
+}
+
+.img-picker:hover .svg-overlay {
+  display: block;
+}
+
+.svg-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  
 }
 
 .img-counter {
@@ -265,6 +285,10 @@ a:hover {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
+}
+
+.stat {
+  margin-bottom: 10px;
 }
 
 .stat span {
@@ -601,7 +625,7 @@ box-shadow: 0px 4px 0px 0px #127223, 0px 4px 20px 0px rgba(255, 255, 255, 0.40) 
 
   @media (max-width: 480px) { 
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -920,6 +944,8 @@ a:hover {
 
 #imageCarousel img {
   border-radius: 20px;
+  width: 667px;
+  height: 1000px;
 }
 
 #carouselExample img {
