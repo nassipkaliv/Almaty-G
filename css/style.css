@@ -185,7 +185,7 @@ a:hover {
 
 @media (max-width: 576px) {
   .modal-dialog {
-      max-width: 380px;
+      max-width: 370px;
       margin: 1.75rem auto;
     }
   }
@@ -256,18 +256,6 @@ a:hover {
   border-radius: 20px;
 }
 
-.img-picker:hover .svg-overlay {
-  display: block;
-}
-
-.svg-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  
-}
 
 .img-counter {
   display: flex;
@@ -1014,16 +1002,14 @@ a:hover {
   background-color: transparent;
 }
 
-#carouselExample {
-  .img-thumbnail {
-    opacity: 0.5;
-    transition: opacity 0.3s;
+#carouselExample .img-thumbnail {
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 
-.img-thumbnail.active,
-.img-thumbnail:hover
- {
-    opacity: 1;
-}
+#carouselExample .img-thumbnail:hover,
+#carouselExample .img-thumbnail:active {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 

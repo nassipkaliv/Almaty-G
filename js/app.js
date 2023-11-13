@@ -34,27 +34,3 @@ function changeActive(index) {
       }
   });
 }
-
-
-$(document).ready(function () {
-  var startY;
-  var endY;
-  var threshold = 50; // Adjust this value based on your preference for swipe distance to close the modal
-
-  $('#imageCarousel').on('touchstart', function (e) {
-    startY = e.originalEvent.touches[0].pageY;
-  });
-
-  $('#imageCarousel').on('touchmove', function (e) {
-    endY = e.originalEvent.touches[0].pageY;
-  });
-
-  $('#imageCarousel').on('touchend', function () {
-    var deltaY = endY - startY;
-
-    if (Math.abs(deltaY) > threshold) {
-      // Swipe up or down detected
-      $('#myModal').modal('hide');
-    }
-  });
-});
