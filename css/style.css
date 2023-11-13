@@ -1007,9 +1007,65 @@ a:hover {
   transition: opacity 0.3s;
 }
 
-#carouselExample .img-thumbnail:hover,
-#carouselExample .img-thumbnail:active {
+#carouselExample .carousel-item.active .img-thumbnail,
+#carouselExample .img-thumbnail:hover {
   opacity: 1;
-  transition: opacity 0.3s;
+}
+
+.svg-overlay {
+  display: none;
+}
+
+
+
+.carousel-indicators {
+  display: none;
+}
+
+#carouselExampleGirl .carousel-indicators {
+  display: flex;
+    bottom: 0;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+#carouselExampleGirl2 .carousel-indicators {
+  display: flex;
+    bottom: 0;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.carousel-indicators li {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+.carousel-indicators [data-bs-target] {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .carousel-indicators {
+    display: flex;
+    bottom: 0;
+    margin-bottom: 50px;
+    z-index: 1;
+  }
 }
 
