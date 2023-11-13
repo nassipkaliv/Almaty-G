@@ -465,6 +465,7 @@ td {
 .modal {
   background: rgba(23, 30, 46, 0.75);
   backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
 .modal-content {
@@ -941,6 +942,8 @@ a:hover {
     }
   }
 }
+
+
 
 
 #imageCarousel img {
