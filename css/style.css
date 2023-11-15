@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat, repeat;
   background-color: #12151C;
   font-family: 'Sofia Sans', sans-serif;
-}sv
+}
 
 
 
@@ -1013,17 +1013,17 @@ a:hover {
 }
 
 .svg-overlay {
-  display: none;
-}
-
-.carousel-img-container:hover .svg-overlay {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
+.carousel-inner:hover .svg-overlay {
+  opacity: 1;
+}
 
 
 .carousel-indicators {
