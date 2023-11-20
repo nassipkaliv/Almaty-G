@@ -938,6 +938,11 @@ a:hover {
   border-radius: 20px;
 }
 
+#imageCarousel .carousel-indicators {
+  display: flex;
+  margin-bottom: -40px;
+}
+
 #imageCarousel .btn-close {
   right: 145px;
   z-index: 1;
@@ -962,11 +967,6 @@ a:hover {
 
 .carousel-control-next.custom {
   
-  transition: color 0.3s;
-}
-
-.carousel-indicators.custom {
-  margin-bottom: -60px;
   transition: color 0.3s;
 }
 
@@ -1006,6 +1006,8 @@ a:hover {
   opacity: 0.5;
   transition: opacity 0.3s;
 }
+
+
 
 #carouselExample .carousel-item.active .img-thumbnail,
 #carouselExample .img-thumbnail:hover {

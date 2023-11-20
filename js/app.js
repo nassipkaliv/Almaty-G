@@ -35,3 +35,25 @@ function changeActive(index) {
   });
 }
 
+
+var touchstartY = 0;
+var touchendY = 0;
+
+document.getElementById('imageCarousel').addEventListener('touchstart', function (event) {
+  touchstartY = event.changedTouches[0].screenY;
+}, false);
+
+document.getElementById('imageCarousel').addEventListener('touchend', function (event) {
+  touchendY = event.changedTouches[0].screenY;
+  handleSwipe();
+}, false);
+
+function handleSwipe() {
+  var deltaY = touchendY - touchstartY;
+
+  if (Math.abs(deltaY) > 50) {
+
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    myModal.hide();
+  }
+}
