@@ -35,25 +35,56 @@ function changeActive(index) {
   });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var startX;
+  var startY;
 
-var touchstartY = 0;
-var touchendY = 0;
+  document.getElementById('myModal').addEventListener('touchstart', function (e) {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+  });
 
-document.getElementById('imageCarousel').addEventListener('touchstart', function (event) {
-  touchstartY = event.changedTouches[0].screenY;
-}, false);
+  document.getElementById('myModal').addEventListener('touchmove', function (e) {
+      var currentX = e.touches[0].clientX;
+      var currentY = e.touches[0].clientY;
 
-document.getElementById('imageCarousel').addEventListener('touchend', function (event) {
-  touchendY = event.changedTouches[0].screenY;
-  handleSwipe();
-}, false);
+      var diffX = startX - currentX;
+      var diffY = startY - currentY;
 
-function handleSwipe() {
-  var deltaY = touchendY - touchstartY;
+      if (Math.abs(diffY) > Math.abs(diffX)) {
+          if (diffY > 0) {
+              $('#myModal').modal('hide');
+          }
+      }
+  });
+});
 
-  if (Math.abs(deltaY) > 50) {
 
-    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-    myModal.hide();
-  }
+
+if (window.jQuery) {
+  $(document).ready(function () {
+  
+    var myCarousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
+      interval: false, 
+      wrap: false
+    });
+
+    $('#myModal').on('shown.bs.modal', function () {
+      loadImages();
+    });
+
+    function loadImages() {
+      $('#imageCarousel .carousel-item.active .lazyload').each(function () {
+        var src = $(this).attr('data-src');
+        $(this).attr('src', src);
+      });
+    }
+
+
+    $('#imageCarousel').on('slid.bs.carousel', function () {
+      loadImages();
+    });
+  });
+} else {
+  console.error('jQuery is not loaded!');
 }
